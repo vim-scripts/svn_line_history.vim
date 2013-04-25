@@ -1,0 +1,3 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4549
+
+The plugin defines single command SvnLineHistory. When called this command will show last commit number N in which the line under the cursor was changed and that commit log message. This information and also full diff for the commit N will be showed in a new buffer which will be opened in a vertical split. The current buffer file should be under Svn version control, and you need to have access to the repository. The command execution might take some time, because we need to send blame, log and diff requests to the repository server. The plugin will work even if the file has local changes which do not affect the current line.
